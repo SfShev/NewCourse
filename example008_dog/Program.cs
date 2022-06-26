@@ -1,11 +1,12 @@
 ﻿int count= 0;
 int distance = 10000;
+int meeting_distance = 10;
 int first_friend_speed = 1;
 int second_friend_speed = 2;
 int dog_speed = 5;
 int friend = 2;
 int time = 0;
-while (distance > 10)
+while (distance > meeting_distance)
 {
     if (friend == 1)
 
