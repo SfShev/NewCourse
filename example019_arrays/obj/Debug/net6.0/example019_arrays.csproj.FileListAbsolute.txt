@@ -13,3 +13,18 @@ C:\Users\Sf_Shev\Desktop\ДЗ\C Sharp\Lesson1\NewCourse\example019_arrays\obj\De
 C:\Users\Sf_Shev\Desktop\ДЗ\C Sharp\Lesson1\NewCourse\example019_arrays\obj\Debug\net6.0\example019_arrays.pdb
 C:\Users\Sf_Shev\Desktop\ДЗ\C Sharp\Lesson1\NewCourse\example019_arrays\obj\Debug\net6.0\example019_arrays.genruntimeconfig.cache
 C:\Users\Sf_Shev\Desktop\ДЗ\C Sharp\Lesson1\NewCourse\example019_arrays\obj\Debug\net6.0\ref\example019_arrays.dll
+F:\Shev\Examples\example019_arrays\bin\Debug\net6.0\example019_arrays.exe
+F:\Shev\Examples\example019_arrays\bin\Debug\net6.0\example019_arrays.deps.json
+F:\Shev\Examples\example019_arrays\bin\Debug\net6.0\example019_arrays.runtimeconfig.json
+F:\Shev\Examples\example019_arrays\bin\Debug\net6.0\example019_arrays.dll
+F:\Shev\Examples\example019_arrays\bin\Debug\net6.0\example019_arrays.pdb
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.csproj.AssemblyReference.cache
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.GeneratedMSBuildEditorConfig.editorconfig
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.AssemblyInfoInputs.cache
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.AssemblyInfo.cs
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.csproj.CoreCompileInputs.cache
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.dll
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\refint\example019_arrays.dll
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.pdb
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\example019_arrays.genruntimeconfig.cache
+F:\Shev\Examples\example019_arrays\obj\Debug\net6.0\ref\example019_arrays.dll

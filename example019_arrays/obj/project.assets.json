@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Sf_Shev\\.nuget\\packages\\": {}
+    "C:\\Users\\alex-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sf_Shev\\Desktop\\ДЗ\\C Sharp\\Lesson1\\NewCourse\\example019_arrays\\example019_arrays.csproj",
+      "projectUniqueName": "F:\\Shev\\Examples\\example019_arrays\\example019_arrays.csproj",
       "projectName": "example019_arrays",
-      "projectPath": "C:\\Users\\Sf_Shev\\Desktop\\ДЗ\\C Sharp\\Lesson1\\NewCourse\\example019_arrays\\example019_arrays.csproj",
-      "packagesPath": "C:\\Users\\Sf_Shev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sf_Shev\\Desktop\\ДЗ\\C Sharp\\Lesson1\\NewCourse\\example019_arrays\\obj\\",
+      "projectPath": "F:\\Shev\\Examples\\example019_arrays\\example019_arrays.csproj",
+      "packagesPath": "C:\\Users\\alex-\\.nuget\\packages\\",
+      "outputPath": "F:\\Shev\\Examples\\example019_arrays\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sf_Shev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alex-\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
