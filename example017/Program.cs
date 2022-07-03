@@ -2,9 +2,6 @@
 Console.WriteLine("Введите число");
 
 int number1 = Convert.ToInt32(Console.ReadLine());
-int a = 0;
-int b = 0;
-
 
 if (number1 > 99)
 {
