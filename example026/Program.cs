@@ -16,7 +16,7 @@
 }
 Console.Write("Введите число у которого хотите узнать сумму его цифр: ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Сумма чисел = {SumOfDigits(num)} ");
+Console.WriteLine($"Сумма цифр = {SumOfDigits(num)} ");
 
 /*
 }
