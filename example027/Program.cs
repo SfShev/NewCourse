@@ -22,4 +22,5 @@ return collection;
 Console.Write("Хотите создать массив? Введите длину массива: ");
 int arraysize = Convert.ToInt32(Console.ReadLine()); 
 
+
 Collection(arraysize);
