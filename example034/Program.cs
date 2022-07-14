@@ -1,5 +1,6 @@
-﻿Console.Write("Хотите создать массив? Введите длину массива: ");
+﻿Console.Write("Введите длину массива: ");
 int arraysize = Convert.ToInt32(Console.ReadLine());
+int positivenumber = 0;
 int[] collection = new int[arraysize];
 Console.WriteLine("Заполните массив: ");
 
@@ -15,7 +16,6 @@ int[] Collection(int elements)
     return collection;
 }
 
-
 void PrintCollection()
 {
     Console.WriteLine();
@@ -25,9 +25,29 @@ void PrintCollection()
     {
         Console.Write(item + ",");
     }
+    Console.WriteLine("\b \b");
 
+}
+
+int SarchPositiveNumber(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > 0)
+        {
+            positivenumber = positivenumber + 1;
+        }
+    }
+    return positivenumber;
+}
+
+void ShowEvens()
+{
+    Console.WriteLine("Количество положительных чисел в массиве: ");
+    Console.WriteLine(positivenumber);
 }
 
 Collection(arraysize);
 PrintCollection();
-System.Console.WriteLine("\b \b");
+SarchPositiveNumber(collection);
+ShowEvens();
