@@ -9,6 +9,7 @@ int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите максимальное число: ");
 int max = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
+double result = 0;
 
 
 
@@ -40,29 +41,40 @@ void ShowMatrix(double[,] matrix)
     }
 }
 
-void CheckMatrix(double[,] matrix)
+double CheckMatrix(double[,] matrix)
 {
     Console.WriteLine("Введите позицию числа,которое вы ищите");
     Console.Write("Введите строку: ");
-    int row = Convert.ToInt32(Console.ReadLine());
+    int row = Convert.ToInt32(Console.ReadLine()) - 1;
     Console.Write("Введите столбец: ");
-    int colum = Convert.ToInt32(Console.ReadLine());
-
-    //  double[,] searchposition = new double[row, colum];
-
+    int colum = Convert.ToInt32(Console.ReadLine()) - 1;
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             if (i == row && j == colum)
             {
-                Console.WriteLine(Math.Round(matrix[i, j], 1));
+                result = matrix[i, j];
             }
         }
-        
+
+    }
+    return result;
+}
+
+void ShowResult(double resultofcheckingmatrix)
+{
+    if (resultofcheckingmatrix == 0)
+    {
+        Console.WriteLine("Такого числа в массиве нет!");
+    }
+    else
+    {
+        Console.WriteLine($"Число которое вы ищете: {Math.Round(resultofcheckingmatrix, 1)}");
     }
 }
 
 double[,] mtrx = GetMatrix(rows, colums, min, max);
 ShowMatrix(mtrx);
 CheckMatrix(mtrx);
+ShowResult(result);
