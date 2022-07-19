@@ -40,18 +40,18 @@ void ShowMatrix(int[,] matrix)
     }
 }
 
-void SwapLinesInMatrix(int[,] matrix)
+void SwapLinesInMatrix(int[,] matrix,int row1,int row2)
 {
     for (int i = 0; i < matrix.GetLength(1); i++)
     {
-        int temp = matrix[0, i];
-        matrix[0, i] = matrix[matrix.GetLength(0) - 1, i];
-        matrix[matrix.GetLength(0) - 1, i] = temp;
+        int temp = matrix[row1, i];
+        matrix[row1, i] = matrix[row2, i];
+        matrix[row2, i] = temp;
     }
 }
 
 int [,] mtrx = GetMatrix(rows,colums,min,max);
 ShowMatrix(mtrx);
-SwapLinesInMatrix(mtrx);
+SwapLinesInMatrix(mtrx,0,mtrx.GetLength(0)-1);
 Console.WriteLine();
 ShowMatrix(mtrx);
