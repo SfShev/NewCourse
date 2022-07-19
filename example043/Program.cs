@@ -32,10 +32,30 @@ void ShowMatrix(int[,] matrix)
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             if (j == 0) Console.Write("|");
-            Console.Write($" {matrix[i, j],1}|");
+            Console.Write($" {matrix[i, j],2}|");
         }
         Console.WriteLine();
     }
+}
+
+int[,] DescendingOrder(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            for (int k = 0; k < matrix.GetLength(1) - 1; k++)
+            {
+                if (matrix[i, k] < matrix[i, k + 1])
+                {
+                    int temp = matrix[i, k + 1];
+                    matrix[i, k + 1] = matrix[i, k];
+                    matrix[i, k] = temp;
+                }
+            }
+        }
+    }
+    return matrix;
 }
 
 int[,] AscendingOrder(int[,] matrix)
@@ -44,11 +64,14 @@ int[,] AscendingOrder(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (matrix[i, j] < matrix[i, j++])
+            for (int k = 0; k < matrix.GetLength(1) - 1; k++)
             {
-                int temp = matrix[i, j];
-                matrix[i, j] = matrix[i, j++];
-                matrix[i, j++] = temp;
+                if (matrix[i, k] > matrix[i, k + 1])
+                {
+                    int temp = matrix[i, k + 1];
+                    matrix[i, k + 1] = matrix[i, k];
+                    matrix[i, k] = temp;
+                }
             }
         }
     }
@@ -57,9 +80,11 @@ int[,] AscendingOrder(int[,] matrix)
 
 
 
-
 int[,] mtrx = GetMatrix(rows, colums, min, max);
 ShowMatrix(mtrx);
 Console.WriteLine();
-int[,] matr = AscendingOrder(mtrx);
-ShowMatrix(matr);
+int[,] descendingmtrx = DescendingOrder(mtrx);
+ShowMatrix(descendingmtrx);
+Console.WriteLine();
+int[,] ascendingmtrx = AscendingOrder(mtrx);
+ShowMatrix(ascendingmtrx);
