@@ -52,7 +52,7 @@ int LineSumm(int[,] matrix, int i)
     return summ;
 }
 
-void ShowResult()
+void ShowMinSummLine()
 {
     int lineminsumm = 0;
     int summline = LineSumm(mtrx, 0);
@@ -71,4 +71,4 @@ void ShowResult()
 
 ShowMatrix(mtrx);
 Console.WriteLine();
-ShowResult();
+ShowMinSummLine();
