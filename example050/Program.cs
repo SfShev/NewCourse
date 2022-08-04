@@ -1,13 +1,16 @@
 ﻿Console.Write("Введите длину массива: ");
 int arraysize = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+Console.Write("Введите наибольшее количество символов строк,которые хотите увидеть: ");
+int numberofcharacters=Convert.ToInt32(Console.ReadLine());
+
 string[] mainarray = new string[arraysize];
 string[] resultarray = new string[arraysize];
-
-Console.WriteLine("Заполните массив: ");
-
+int j = 0;
 
 string[] Collection(int elements)
 {
+    Console.WriteLine("Заполните массив: ");
     for (int i = 0; i < elements; i++)
     {
         Console.WriteLine();
@@ -22,9 +25,7 @@ string[] NewCollection(string[] array, string[] newarray)
 
     for (int i = 0; i < array.Length; i++)
     {
-        int j = 0;
-
-        if (array[i].Length <= 3)
+        if (array[i].Length <= numberofcharacters)
         {
             newarray[j] = array[i];
             j++;
