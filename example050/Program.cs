@@ -2,7 +2,7 @@
 int arraysize = Convert.ToInt32(Console.ReadLine());
 string[] mainarray = new string[arraysize];
 string[] resultarray = new string[arraysize];
-int j = 0;
+
 Console.WriteLine("Заполните массив: ");
 
 
@@ -17,12 +17,12 @@ string[] Collection(int elements)
     return mainarray;
 }
 
-
 string[] NewCollection(string[] array, string[] newarray)
 {
 
     for (int i = 0; i < array.Length; i++)
     {
+        int j = 0;
 
         if (array[i].Length <= 3)
         {
@@ -34,6 +34,7 @@ string[] NewCollection(string[] array, string[] newarray)
 
     return newarray;
 }
+
 void PrintArrays()
 {
     Console.WriteLine();
