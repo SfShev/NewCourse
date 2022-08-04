@@ -30,7 +30,8 @@ string[] NewCollection(string[] array, string[] newarray)
             j++;
         }
     }
-    
+
+
     return newarray;
 }
 void PrintArrays()
@@ -39,15 +40,22 @@ void PrintArrays()
     Console.Write("Главный массив: ");
     foreach (var item in mainarray)
     {
-        Console.Write(item + " ");
+        Console.Write(item + ",");
     }
+    Console.WriteLine("\b \b");
 
     Console.WriteLine();
     Console.Write("Новый массив: ");
+
+    resultarray = resultarray.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
     foreach (var item in resultarray)
     {
-        Console.Write(item + " ");
+        Console.Write(item + ",");
     }
+    Console.WriteLine("\b \b");
+
+
 }
 
 Collection(arraysize);
