@@ -2,11 +2,11 @@
 int arraysize = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 Console.Write("Введите наибольшее количество символов строк,которые хотите увидеть: ");
-int numberofcharacters=Convert.ToInt32(Console.ReadLine());
+int numberofcharacters = Convert.ToInt32(Console.ReadLine());
 
 string[] mainarray = new string[arraysize];
 string[] resultarray = new string[arraysize];
-int j = 0;
+
 
 string[] Collection(int elements)
 {
@@ -22,9 +22,10 @@ string[] Collection(int elements)
 
 string[] NewCollection(string[] array, string[] newarray)
 {
-
+    int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
+
         if (array[i].Length <= numberofcharacters)
         {
             newarray[j] = array[i];
